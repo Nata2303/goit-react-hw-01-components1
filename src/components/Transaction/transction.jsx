@@ -7,36 +7,9 @@ const TransactionHistory = ({ items }) => {
     <table style={{ backgroundColor: 'white', width: '330px' }}>
       <thead>
         <tr style={{ backgroundColor: 'lightblue', height: '30px' }}>
-          <th
-            style={{
-              color: 'white',
-              fontSize: '16px',
-              textTransform: 'uppercase',
-              width: '110px',
-            }}
-          >
-            Type
-          </th>
-          <th
-            style={{
-              color: 'white',
-              fontSize: '16px',
-              textTransform: 'uppercase',
-              width: '110px',
-            }}
-          >
-            Amount
-          </th>
-          <th
-            style={{
-              color: 'white',
-              fontSize: '16px',
-              textTransform: 'uppercase',
-              width: '110px',
-            }}
-          >
-            Currency
-          </th>
+          <th className="th-item">Type</th>
+          <th className="th-item">Amount</th>
+          <th className="th-item">Currency</th>
         </tr>
       </thead>
       <tbody>

@@ -4,3 +4,9 @@ tr {
 tr:nth-child(2n) {
   background-color: LightGray;
 }
+.th-item {
+  color: 'white';
+  font-size: 16px;
+  text-transform: 'uppercase';
+  width: '110px';
+}

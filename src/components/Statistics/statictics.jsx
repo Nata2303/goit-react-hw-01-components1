@@ -1,17 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './statistics.module.css';
+import randomColor from './randomColor';
 
 const Statistics = ({ title, stats }) => {
-  const randomColor = () => {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  };
-
   const statItems = [
     { label: '.docx', percentage: '4%' },
     { label: '.mp3', percentage: '14%' },
@@ -37,7 +29,7 @@ const Statistics = ({ title, stats }) => {
       </ul>
     </section>
   );
-};
+}
 
 Statistics.propTypes = {
   title: PropTypes.string,
